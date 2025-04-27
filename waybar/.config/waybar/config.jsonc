@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -52,13 +52,14 @@
     "ignored-sinks": ["Easy Effects Sink"]
   },
   "bluetooth": {
-	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+	//"controller": "bluetoothctl", // specify the alias of the controller if there are more than 1 on the system
 	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
 	"tooltip":true,
-	"format-connected": " {num_connections} connected",
+	"format-connected": " {num_connections} cntd",
 	"tooltip-format": "{controller_alias}\t{controller_address}",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"on-click": "blueberry"
   }
 }

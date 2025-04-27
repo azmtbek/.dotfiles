@@ -54,6 +54,7 @@ button:hover {
     background-color: #eb4d4b;
 }
 
+#bluetooth,
 #pulseaudio,
 #clock,
 #battery,
@@ -107,6 +108,11 @@ button:hover {
 #battery {
     color: @green;
     border-bottom: 2px solid @green;
+}
+
+#bluetooth {
+    color: @teal;
+    border-bottom: 2px solid @teal;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
