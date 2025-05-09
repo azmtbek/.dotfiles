@@ -1,0 +1,5 @@
+- matches:
+    - subsystem: drm
+      events: [change]
+  run: /home/%env:<USER>%/.config/hypr/scripts/monitor-handler.sh
+
