@@ -8,8 +8,8 @@
     "tooltip-format":"mountain"
   },
   "clock": {
-    "format": "<span >   </span>{:%a %d %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "<span >  </span> {:%b %d %H:%M}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>"
   },
   "battery": {
     "states": {
@@ -35,7 +35,7 @@
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "{volume} 󰏰 {icon}",
+    "format": "{volume} 󰏰 {icon} ",
     "format-bluetooth": "{volume} 󰏰 {icon} ",
     "format-muted": "",
     "format-icons": {
