@@ -11,7 +11,7 @@
   background: transparent;
   background-color: @crusty;
   color: @text;
-  margin: 5px 5px;
+  margin: 5px;
 }
 
 #workspaces {
@@ -24,7 +24,7 @@
 #workspaces button {
   color: @lavender;
   border-radius: 100%;
-  padding: 0px 0.4rem;
+  padding: 0.1rem 0.4rem;
   margin: 0.4rem;
 }
 
@@ -55,8 +55,8 @@
 #mode,
 #scratchpad {
   background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+  padding: 0 0.6rem;
+  margin: 2px 0;
 }
 
 #custom-mount {
@@ -105,7 +105,6 @@
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
-
 }
 
 /* If workspaces is the rightmost module, omit right margin */
