@@ -29,9 +29,9 @@
 }
 
 #workspaces button.active {
-  color: #ffffff;
+  color: @sky;
   border-radius: 1rem;
-  background-color: @tealy;
+  background-color: @crust;
 }
 
 #workspaces button:hover {
