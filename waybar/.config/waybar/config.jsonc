@@ -8,7 +8,7 @@
     "tooltip-format":"mountain"
   },
   "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
+    "format": "<span >   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
@@ -16,13 +16,13 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}",
+    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}",
+    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}",
+    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}",
+    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}",
     "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
   },
@@ -35,8 +35,8 @@
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "{volume} % {icon}",
-    "format-bluetooth": "{volume} %  {icon} ",
+    "format": "{volume} 󰏰 {icon}",
+    "format-bluetooth": "{volume} 󰏰 {icon} ",
     "format-muted": "",
     "format-icons": {
         "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
@@ -60,9 +60,9 @@
 	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
   "format-controller": " {controller}",
-  "format-no-controller": " no-ctl  &#9775;",
+  "format-no-controller": "󰂲",
 	"tooltip":true,
-	"format-connected": " {num_connections} cntd",
+	"format-connected": "󰂱 {num_connections}",
 	"tooltip-format": "{controller_alias}\t{controller_address}",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
