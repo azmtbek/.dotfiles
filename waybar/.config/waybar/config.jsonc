@@ -2,7 +2,11 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
+  "modules-right": ["custom/mount", "network", "bluetooth", "pulseaudio", "battery", "clock"],
+  "custom/mount": {
+    "format":"&#9968;",
+    "tooltip-format":"mountain"
+  },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -55,6 +59,8 @@
 	//"controller": "bluetoothctl", // specify the alias of the controller if there are more than 1 on the system
 	"format": " {status}",
 	"format-disabled": "", // an empty format will hide the module
+  "format-controller": " {controller}",
+  "format-no-controller": " no-ctl  &#9775;",
 	"tooltip":true,
 	"format-connected": " {num_connections} cntd",
 	"tooltip-format": "{controller_alias}\t{controller_address}",
